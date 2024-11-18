@@ -1,3 +1,5 @@
+# Dabid
+
 import discord
 import os
 
@@ -14,7 +16,7 @@ async def on_ready():
 async def on_message(message):
     if message.author == client.user:
         return
-    
+
     if message.content.startswith('$hello'):
         await message.channel.send('Hello!')
 
